@@ -1,74 +1,30 @@
-.App {
-	text-align: center;
-}
-
-.App-logo {
-	height: 40vmin;
-	pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-	.App-logo {
-		animation: App-logo-spin infinite 20s linear;
-	}
-}
-
-.App-header {
-	background-color: #282c34;
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	font-size: calc(10px + 2vmin);
-	color: white;
-}
-
-.App-link {
-	color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
-}
-
-/* ADDED CSS */
-
-.grid {
-	width: 100vw;
-	height: 10vh;
-	margin: 0 auto 1rem auto;
-	display: flex;
-	background-color: #fff;
-	/* flex: 1; */
+.life {
+	width: 100%;
+	height: 100%;
+	margin: 20 auto 1rem auto;
+	display: block;
 }
 
 .cell {
 	font-size: 64px;
 	line-height: 0px;
-	width: 80px;
-	height: 80px;
+	width: 20px;
+	height: 20px;
 	margin: 0;
 	padding: 0;
 	float: left;
-	background: rgb(92, 90, 90);
-	border-style: solid;
-	border-color: black;
-	border-width: 2px;
-	font-size: 40px;
-	flex: 1;
+}
+
+.cell[data-toggle='0'] {
+	color: #ffffff;
+}
+
+.cell[data-toggle='1'] {
+	color: #0687f5;
 }
 
 .cell-row {
-	height: 80px;
-	flex-wrap: wrap;
-	flex-direction: row;
-	justify-content: center;
+	height: 20px;
 }
 
 .next {
