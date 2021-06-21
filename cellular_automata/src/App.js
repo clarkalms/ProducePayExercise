@@ -5,6 +5,18 @@ function App() {
 	let config = {
 		x: 10,
 		y: 10,
+		data: [
+			[0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+			[0, 0, 1, 1, 0, 0, 0, 0, 0, 0],
+			[0, 0, 0, 0, 2, 0, 0, 0, 0, 0],
+			[0, 0, 0, 1, 2, 0, 0, 0, 0, 0],
+			[0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+			[0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
+			[0, 2, 1, 0, 0, 0, 0, 0, 0, 0],
+			[0, 2, 0, 0, 0, 0, 0, 0, 0, 0],
+			[0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+			[0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+		],
 	};
 
 	const gridMaker = (x, y) => {
@@ -33,6 +45,8 @@ function App() {
 		document.getElementsByClassName('grid')[0].innerHTML = initialGrid;
 		document.getElementsByClassName('next')[0].innerHTML = initialGrid;
 	}
+
+	//RULESET
 
 	return (
 		<div className="App">

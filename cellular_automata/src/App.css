@@ -36,3 +36,45 @@
 		transform: rotate(360deg);
 	}
 }
+
+/* ADDED CSS */
+
+.grid {
+	width: 100vw;
+	height: 10vh;
+	margin: 0 auto 1rem auto;
+	display: flex;
+	background-color: #fff;
+	/* flex: 1; */
+}
+
+.cell {
+	font-size: 64px;
+	line-height: 0px;
+	width: 80px;
+	height: 80px;
+	margin: 0;
+	padding: 0;
+	float: left;
+	background: rgb(92, 90, 90);
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+	font-size: 40px;
+	flex: 1;
+}
+
+.cell-row {
+	height: 80px;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.next {
+	display: none;
+}
+
+body {
+	font-family: sans-serif;
+}
