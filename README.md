@@ -2,6 +2,8 @@
 
 ## Instructions
 
+* Clone the Github repo found [here](https://github.com/clarkalms/ProducePayExercise/tree/master) onto your local environment.
+
 * Open the cellular_automata folder in your editor and run `npm install` at the project's root.
 
 * Run `npm start` at the project root to start the application.
